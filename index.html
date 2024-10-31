@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+       .container{
+        display: grid;
+        width: 90%;
+        max-width: 1000px;
+        margin-inline: auto;
+        grid-template-columns: repeat(5, 1fr);
+        min-height: 100vh;
+        gap: 15px;
+       }
+       body{
+         background-color: beige;
+       }
+       .box{
+        background-color: white;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+       }
+
+      @media screen and (max-width: 1024px) {
+        .body{
+            background-color: purple;
+        }
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+        }
+       }
+      @media screen and (max-width: 800px) {
+        .body{
+            background-color: brown;
+        }
+        .container{
+            grid-template-columns: repeat(3, 1fr);
+        }
+       }
+             @media screen and (max-width: 625px) {
+        .body{
+            background-color: Orange;
+        }
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+       }
+             @media screen and (max-width: 300px) {
+        .body{
+            background-color: Red;
+        }
+        .container{
+            grid-template-columns: 1fr;
+        }
+       }
+
+
+
+
+       /*@media screen and (max-width: 700px) {
+        .box{
+            background-color: red;
+        }*/
+        
+        /*.container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+       }*/
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>
